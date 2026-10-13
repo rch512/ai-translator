@@ -24,7 +24,7 @@ ai-translator/
 ## Security Implementation
 The DeepSeek API key is kept completely separate from the code. Instead of being typed directly into the script, the key is loaded from a local .env file only when the program runs. This guarantees the secret is never accidentally uploaded to GitHub or permanently saved inside the Docker image.
 
-##Local Deployment Setup
+## Local Deployment Setup
 1. Build the Container Image
 The Dockerfile pulls a lightweight Python runtime, installs dependencies, and packages the application logic.
 ```bash
