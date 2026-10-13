@@ -26,11 +26,13 @@ The DeepSeek API key is kept completely separate from the code. Instead of being
 
 ## Local Deployment Setup
 1. Build the Container Image
+
 The Dockerfile pulls a lightweight Python runtime, installs dependencies, and packages the application logic.
 ```bash
 docker build -t translator-app .
 ```
 2. Execute the Workload
+
 The container runs the AI agent using a volume mount (-v). This maps the host directory to the container's working directory, allowing the stateless container to read input.txt and successfully write the generated output.txt back to the host machine.
 
 (PowerShell Execution):
